@@ -1,0 +1,150 @@
+Here’s a simple, clean UI website you can save as `index.html` and open in your browser:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple UI Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    nav {
+      background: #2563eb;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav h2 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 50px 8%;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>MyWebsite</h2>
+
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome 👋</h1>
+    <p>A simple and modern user interface website.</p>
+    <button class="btn" onclick="showMessage()">Get Started</button>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Fast</h3>
+      <p>Simple and lightweight design that loads quickly.</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern</h3>
+      <p>Clean layout with a modern and professional appearance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive</h3>
+      <p>Works nicely on desktop, tablet, and mobile devices.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Welcome to MyWebsite!");
+    }
+  </script>
+
+</body>
+</html>
+```
