@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .box {
+        background-color: white;
+        width: 350px;
+        margin: auto;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    input {
+        width: 90%;
+        padding: 12px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 95%;
+        padding: 12px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    a {
+        display: block;
+        margin-top: 15px;
+        color: #007bff;
+        text-decoration: none;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="box">
+
+    <h1>Login</h1>
+
+    <form onsubmit="login(event)">
+
+        <input type="text" id="username" placeholder="Username / Email" required>
+
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <a href="index.html">Back to Home</a>
+
+</div>
+
+<script>
+    function login(event) {
+
+        event.preventDefault();
+
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        let savedEmail = localStorage.getItem("email");
+        let savedPassword = localStorage.getItem("password");
+
+        if (username === savedEmail && password === savedPassword) {
+
+            alert("Login Successful!");
+
+            window.location.href = "index.html";
+
+        } else {
+
+            alert("Invalid Username or Password!");
+
+        }
+    }
+</script>
+```
+
+</body>
+</html>
