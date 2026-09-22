@@ -1,26 +1,34 @@
 # Login and Signup Website
 
-## Description
-Simple front-end login and signup website.
+## About
 
-## Files
-- `index.html` - Welcome page
-- `signup.html` - Signup page
-- `login.html` - Login page
+A simple and user-friendly Login and Signup website created using HTML, CSS, and JavaScript.
+
+## Pages
+
+- **Welcome Page** - Provides Login, Signup, and Forgot Password options.
+- **Signup Page** - Allows users to enter their First Name, Last Name, Mobile Number, Email, and Password.
+- **Login Page** - Allows registered users to enter their Email/Username and Password.
 
 ## Features
-- Signup
-- Login
-- Forgot Password
-- Page Navigation
 
-## Technologies
+- User Signup
+- User Login
+- Forgot Password option
+- Simple and clean design
+- Easy navigation between pages
+- Front-end only
+
+## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
 
-## How to Run
-Open `index.html` using Live Server in VS Code.
+## Project Flow
 
-## Note
-This project is created for learning purposes.
+**Welcome → Signup → Welcome → Login → Welcome**
+
+## Purpose
+
+This project is created as a basic front-end website to demonstrate a simple login and signup process.
