@@ -22,8 +22,6 @@ A simple and user-friendly Login and Signup website created using HTML, CSS, and
 ## Technologies Used
 
 - HTML
-- CSS
-- JavaScript
 
 ## Project Flow
 
